@@ -1,0 +1,57 @@
+# ---- 密钥与本地配置 ----
+.env
+.env.local
+*.pem
+*.key
+secrets*
+config.local.*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ---- 输入数据（真实项目文件，不入库） ----
+master_plan/*
+key_nodes/*
+daily_reports/*
+warning_output/*
+!master_plan/.gitkeep
+!key_nodes/.gitkeep
+!daily_reports/.gitkeep
+!warning_output/.gitkeep
+
+# ---- 运行产物 / 日志 / 临时文件 ----
+*.log
+debug_compare.log
+warning_log.txt
+*.tmp
+~$*
+.~lock.*
+
+# ---- Web 上传与输出 ----
+web/uploads/*
+web/outputs/*
+!web/uploads/.gitkeep
+!web/outputs/.gitkeep
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 打包 ----
+dist/
+build/
+*.zip
+
+# ---- 防止嵌套副本目录被误提交 ----
+/schedule-warning-ai/

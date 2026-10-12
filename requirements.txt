@@ -1,0 +1,5 @@
+# 命令行版（schedule_warning.py）仅需 openpyxl，其余为 Python 标准库
+openpyxl>=3.0.0
+
+# Web 版（web/app.py）额外需要 Flask
+flask>=2.0.0
